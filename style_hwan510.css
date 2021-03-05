@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    background-color: ivory;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Affects the Links that anchors links to: #ContactLink, #EducationLink, #SkillsLink*/
+.anchor{
+    display:block;
+    height: 144px;
+    margin-top: -144px;
+    visibility:hidden;
+}
+
+#WebBanner {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: "Baskerville Old Face", Serif;
+}
+
+#WebTitle {
+    margin: 0;
+    padding: 30px 30px;
+}
+
+/* Affects the name, address and email */
+.Navigation {
+    float: left;
+    display: block;
+    padding: 8px 0px;
+    width: 33.333%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+.Navigation:hover {
+    background-color: grey;
+}
+
+/* Affects Section headers Contact Information, Education, and Skills */
+.SectionHeader{
+    margin:  30px 0px;
+}
+
+/* Affects Sections Contact, Education, and Skills*/
+.Profile{
+    font-family: "Times New Roman", SansSerif;
+    margin: 30px 0px 30px 30px;
+    padding: 1px;
+    width: 100;
+}
+
+/* Affects The content of Sections Contact, Education, and Skills*/
+.ProfileInformation{
+    margin: 30px;
+}
+
+#ContactInformation{
+    height: 138px;
+}
+
+#Name {
+    padding-top: 15px;
+}
+
+#ProfilePicture {
+    float: left;
+    margin: 0px 30px;
+    border: black solid 5px;
+}
+
+/* Affects the lists under two skills sections: programming language and other skills */
+.SkillSublist{
+    margin-left: 30px;
+    font-family: Calibri, SansSerif;
+}
+
+
