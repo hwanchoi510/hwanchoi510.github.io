@@ -55,13 +55,18 @@ header * {
     padding: 30px;
     border: 10px solid #2cfc03;
     width: 90%;
-    height: 450px;
+    height: 420px;
     background-color: #000000;
     font-family: 'Press Start 2P', cursive;
 
 }
 
 #ContentBox * {
-    background-color: black;
+    background-color: #000000;
     color: #2cfc03;
+}
+
+#Footer {
+    height: 80px;
+    background-color: #000000;
 }
