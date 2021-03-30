@@ -66,6 +66,10 @@ header * {
     color: #2cfc03;
 }
 
+#ContentBox h1 {
+    margin-bottom: 30px;
+}
+
 #Footer {
     height: 80px;
     background-color: #000000;
