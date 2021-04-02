@@ -70,6 +70,10 @@ header * {
     margin-bottom: 30px;
 }
 
+#ContentBox p {
+    line-height: 1.5;
+}
+
 #Footer {
     height: 80px;
     background-color: #000000;
