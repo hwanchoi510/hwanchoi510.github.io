@@ -62,7 +62,7 @@ header * {
 }
 
 #ContentBox {
-    display: flex;
+    display: -webkit-flex;
     flex-direction: row;
 }
 
