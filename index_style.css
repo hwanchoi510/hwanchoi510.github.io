@@ -61,6 +61,11 @@ header * {
 
 }
 
+#ContentBox {
+    display: flex;
+    flex-direction: row;
+}
+
 #ContentBox * {
     background-color: #000000;
     color: #2cfc03;
