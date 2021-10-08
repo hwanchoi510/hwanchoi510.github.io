@@ -1,82 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-* {
+html, body {
     background-color: #1B1B1B;
-    box-sizing: border-box;
-    color: #edf0f1;
+    height: 100%;
     margin: 0;
-    padding: 0;
 }
 
 li, a {
     font-weight: 500;
     font-size: 16px;
     text-decoration: none;
+    color: darkgrey;
 }
 
-header {
-    background-color: #000000;
-    display: flex;
+.box {
+    display: -webkit-flex;
+    flex-flow: column;
+    height: 100%;
+    color: darkgrey;
+}
+
+.row {
+    background-color: #060D0D;
+    -webkit-box-shadow: 0 0 20px #111111;
+}
+
+.row.header {
+    flex: 0 1 auto;
+    display: -webkit-flex;
     justify-content: space-between;
-    padding: 30px 5%;
-}
-
-header * {
+    padding: 20px 5%;
     font-family: 'Press Start 2P', cursive;
-    color: #2cfc03;
-    background-color: #000000;
 }
 
 #Navigation {
-    display: flex;
+    display: -webkit-flex;
     align-items: center;
 }
 
-.PageLinks {
+.pages {
     list-style: none;
     margin: 0;
 }
 
-.PageLinks li {
+.pages li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 5px 20px;
 }
 
-.PageLinks li a {
+.pages li a {
     transition: all 0.3s ease 0s;
 }
-
-.PageLinks li a:hover{
-    color: grey;
+.pages li a:hover{
+    color: darkslategrey;
 }
 
-#ContentBox {
-    padding: 30px;
-    border: 5px solid #2cfc03;
-    width: 100%;
-    height: 540px;
-    background-color: #000000;
+.row.content {
+    flex: 1 1 auto;
+    margin: 4%;
+    display: -webkit-flex;
+    flex-direction: row;
+    padding: 30px 5%;
+    height: 100%;
     font-family: 'Ubuntu';
 }
 
-#ContentBox * {
-    background-color: #000000;
-    color: #2cfc03;
+.content .text {
+    width: 50%;
 }
 
-#ContentBox h1 {
-    margin-bottom: 30px;
+.profile.column{
+    display: -webkit-flex;
+    flex-direction: column;
+}
+
+#Title {
+    margin: 15px 0;
+    height: 60px;
     font-size: 50px;
 }
-#ContentBox p {
-    line-height: 1.5;
-    padding-right: 5px;
-    margin-bottom: 10px;
-    font-size: 30px;
+
+#ProfilePic {
+    width: 250px;
+    height: auto;
+    margin: auto 0 auto auto;
+    border: 5px solid #1B1B1B;
+    vertical-align: center;
 }
 
-#Footer {
-    height: 80px;
-    background-color: #000000;
+.text.column {
+    display: -webkit-flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.text.column #Filler {
+    margin: 45px 0;
+}
+
+.text.column p {
+    line-height: 1.5;
+    font-size: 20px;
+    margin: auto 0;
+}
+
+.row.footer {
+    display: -webkit-flex;
+    flex: 0 1 80px;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+#FooterDescription {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+.row.footer .contact {
+    list-style: none;
+    padding: 0;
+    margin: 10px auto 10px auto;
+}
+
+.languages {
+    list-style: none;
+    margin: 50px 4% 0 0;
+}
+
+.languages li {
+    display: inline-block;
+    padding: 5px 5px;
+}
+
+.languages li a {
+    transition: all 0.3s ease 0s;
+}
+.languages li a:hover{
+    color: darkslategrey;
 }
