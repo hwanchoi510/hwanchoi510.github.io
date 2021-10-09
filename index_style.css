@@ -8,8 +8,6 @@ html, body {
 }
 
 li, a {
-    font-weight: 500;
-    font-size: 16px;
     text-decoration: none;
     color: darkgrey;
 }
@@ -31,12 +29,18 @@ li, a {
     display: -webkit-flex;
     justify-content: space-between;
     padding: 20px 5%;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Ubuntu';
 }
 
 #Navigation {
     display: -webkit-flex;
+    margin: auto 0 auto auto;
     align-items: center;
+}
+
+#WebTitle {
+    margin: auto 0 auto 0;
+    font-size: 40px;
 }
 
 .pages {
@@ -50,6 +54,8 @@ li, a {
 }
 
 .pages li a {
+    font-weight: 500;
+    font-size: 20px;
     transition: all 0.3s ease 0s;
 }
 .pages li a:hover{
@@ -66,17 +72,23 @@ li, a {
     font-family: 'Ubuntu';
 }
 
-.content .text {
+.text.column{
     width: 50%;
+    margin-right: 60px
 }
 
-.content h1 {
-    margin-bottom: 30px;
+#Title {
+    margin: 15px 0;
+    height: 60px;
     font-size: 50px;
+}
+
+#ContentText {
+    margin: 35px 0;
 }
 .content p {
     line-height: 1.5;
-    padding-right: 40px;
+    margin-top: 0;
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -101,6 +113,7 @@ li, a {
 }
 
 .row.footer .contact {
+    font-size: 15px;
     list-style: none;
     padding: 0;
     margin: 10px auto 10px auto;
@@ -108,11 +121,13 @@ li, a {
 
 .languages {
     list-style: none;
-    margin: 50px 4% 0 0;
+    margin: 50px 4% 0 auto;
+    padding: 0;
 }
 
 .languages li {
     display: inline-block;
+    float: right;
     padding: 5px 5px;
 }
 

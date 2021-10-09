@@ -8,8 +8,6 @@ html, body {
 }
 
 li, a {
-    font-weight: 500;
-    font-size: 16px;
     text-decoration: none;
     color: darkgrey;
 }
@@ -31,12 +29,18 @@ li, a {
     display: -webkit-flex;
     justify-content: space-between;
     padding: 20px 5%;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Ubuntu';
 }
 
 #Navigation {
     display: -webkit-flex;
+    margin: auto 0 auto auto;
     align-items: center;
+}
+
+#WebTitle {
+    margin: auto 0;
+    font-size: 40px;
 }
 
 .pages {
@@ -50,6 +54,8 @@ li, a {
 }
 
 .pages li a {
+    font-weight: 500;
+    font-size: 20px;
     transition: all 0.3s ease 0s;
 }
 .pages li a:hover{
@@ -82,9 +88,9 @@ li, a {
 }
 
 #ProfilePic {
-    width: 250px;
+    width: 300px;
     height: auto;
-    margin: auto 0 auto auto;
+    margin: 30px auto;
     border: 5px solid #1B1B1B;
     vertical-align: center;
 }
@@ -99,10 +105,15 @@ li, a {
     margin: 45px 0;
 }
 
-.text.column p {
+#ProfileDescription {
     line-height: 1.5;
     font-size: 20px;
-    margin: auto 0;
+    margin: 30px 0;
+}
+
+#ProfileDescription p {
+    margin-top: 0;
+    margin-bottom: 25px;
 }
 
 .row.footer {
@@ -118,6 +129,7 @@ li, a {
 }
 
 .row.footer .contact {
+    font-size: 15px;
     list-style: none;
     padding: 0;
     margin: 10px auto 10px auto;
@@ -125,11 +137,13 @@ li, a {
 
 .languages {
     list-style: none;
-    margin: 50px 4% 0 0;
+    margin: 50px 4% 0 auto;
+    padding: 0;
 }
 
 .languages li {
     display: inline-block;
+    float: right;
     padding: 5px 5px;
 }
 

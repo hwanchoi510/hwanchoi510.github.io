@@ -31,7 +31,7 @@ li, a {
     display: -webkit-flex;
     justify-content: space-between;
     padding: 20px 5%;
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Ubuntu';
 }
 
 #Navigation {
